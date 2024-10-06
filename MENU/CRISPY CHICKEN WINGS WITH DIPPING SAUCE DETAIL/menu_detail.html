@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="menu_detail.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+    <title>MENU Detail</title>
+</head>
+<body>
+    
+
+  
+    <nav class="navbar navbar-expand-sm" id="navigation_bar">
+
+        <div class="container-fluid" id="sticky_navbar">
+    
+        <img src="../../IMAGES/Feast.png" alt="Avatar Logo" style="width:80px;" class="rounded-pill ms-5">
+    
+          <a class="navbar-brand ms-2" href="#"></a>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
+    
+            <ul class="navbar-nav mx-auto">
+    
+    
+    
+              <li class="nav-item">
+                <a class="nav-link me-4" href="#" data-bs-toggle="tooltip"
+                  title="Select from the largest Variet of food assortments" data-bs-placement="bottom">Our Plans</a>
+              </li>
+    
+    
+    
+              <li class="nav-item">
+                <a class="nav-link me-4" href="#" data-bs-toggle="tooltip" title="Avail Offers"
+                  data-bs-placement="bottom">Gift Cards</a>
+    
+    
+    
+              </li>
+              <li class="nav-item dropdown me-4">
+                <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">Menu</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Vegetarian Favorites</a></li>
+                  <li><a class="dropdown-item" href="#">Meat and Seafood Dishes Savory</a></li>
+                  <li><a class="dropdown-item" href="#">Protein-Rich Options</a></li>
+                </ul>
+              </li>
+    
+    
+    
+              <li class="nav-item dropdown me-4">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About Us</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                  <li><a class="dropdown-item" href="#">Our Vision</a></li>
+                  <li><a class="dropdown-item" href="#">How it Works</a></li>
+                </ul>
+              </li>
+            </ul>
+    
+            <i class="fa-solid fa-cart-arrow-down me-4" style="color: black; font-size: 24px"></i>
+    
+            <form class="d-flex">
+              <button class="signin_button" type="button" data-toggle="modal" data-target="#exampleModal">Sign In</button>
+            </form>
+    
+            <script>
+              // Initialize tooltips
+              var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+              var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+              })
+            </script>
+    
+          </div>
+    
+        </div>
+    
+      </nav>
+
+
+  <!-- The Modal -->
+  <div class="modal fade" id="exampleModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Sign In</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <form>
+            <div class="form-group mt-3">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group mt-3">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group mt-3">
+              <label for="phone">Phone Number:</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="form-group mt-3">
+              <label for="state">State:</label>
+              <input type="text" class="form-control" id="state" placeholder="Enter your state">
+            </div>
+            <div class="form-group mt-3">
+              <label for="address">Address:</label>
+              <textarea class="form-control" id="address" rows="3" placeholder="Enter your address"></textarea>
+            </div>
+          </form>
+        </div>
+  
+        <!-- Modal Footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+
+      <div class="container-fluid" id="image">
+        <img src="../../IMAGES/chicken dipping bg.jpg" alt="Chicken wing photo">
+      </div>
+
+
+
+      <div class="description container">
+        <div class="dish_heading">
+            <div>
+                <h2>
+                  <b>Chicken with Dipping Sauce</b>
+                  <br>
+                    with Hint Of Hot Sauce
+                </h2>
+            </div>
+            <div>
+                <button type="button" class="btn btn-success btn-lg">Get this food right now !</button>
+            </div>
+        </div>
+
+
+        <div class="dish_info mt-3">
+          <div>
+            <p>Indulge in our crispy chicken tenders, complemented by your choice of tantalizing dipping sauces. Our chicken is seasoned and fried to golden perfection, offering a satisfying crunch and juicy interior. Paired with savory or sweet sauces, this dish is perfect for any occasion—whether as an appetizer or a main course. Enjoy a flavorful experience with each bite of this delicious combination.</p>
+            <p>Tags: Crispy • Savory • Quick Prep</p>
+            <p>Allergens: Eggs • Milk • Wheat • Soy • Chicken</p>
+            <h6>**Produced in a facility that processes eggs, milk, fish, peanuts, sesame, shellfish, soy, tree nuts, and wheat.</h6>
+        </div>
+
+
+        </div>
+      </div>
+
+
+      <div class="container items_needed">
+
+
+        <div class="items_heading">
+            <div>
+                <h2>Items Provided</h2>
+            </div>
+
+            <div class="serving_size">
+              <div>
+              <h4>Serving Size</h4>
+              </div>
+
+              <div class="btn-group">
+                <button type="button" class="btn btn-outline-success">2</button>
+                <button type="button" class="btn btn-outline-success">4</button>
+                <button type="button" class="btn btn-outline-success">6</button>
+              </div>
+
+            </div>
+
+        </div>
+
+        <div class="foods_details">
+          <div class="items_photo">
+              <ul>
+                  <li class="item">
+                      <img src="../../IMAGES/Chicken Wing/chicken.jpg" class="rounded-circle" style="width: 100px;" alt="Chicken Image">
+                      <div class="item-text">
+                          <h5>Chicken Breast</h5>
+                          <p>2 Pcs.</p>
+                      </div>
+                  </li>
+      
+                  <li class="item">
+                      <img src="../../IMAGES/Chicken Wing/garlic copy 2.jpg" class="rounded-circle" style="width: 100px;" alt="Garlic Image">
+                      <div class="item-text">
+                          <h5>Garlic Cloves</h5>
+                          <p>15 Pcs.</p>
+                      </div>
+                  </li>
+      
+                  <li class="item">
+                      <img src="../../IMAGES/CRISPY CHICKEN WINGS WITH DIPPING SAUCE/feta copy 2.jpg" class="rounded-circle" style="width: 100px;" alt="Hot Sauce Image">
+                      <div class="item-text">
+                          <h5>Feta</h5>
+                          <p>100 gm.</p>
+                      </div>
+                  </li>
+      
+                  <li class="item">
+                      <img src="../../IMAGES/CRISPY CHICKEN WINGS WITH DIPPING SAUCE/lettuce copy 2.jpg" class="rounded-circle" style="width: 100px;" alt="Chillies Image">
+                      <div class="item-text">
+                          <h5>Lettuce</h5>
+                          <p>2 Pcs.</p>
+                      </div>
+                  </li>
+      
+                  <li class="item">
+                      <img src="../../IMAGES/CRISPY CHICKEN WINGS WITH DIPPING SAUCE/olive oil copy 3.png" class="rounded-circle" style="width: 100px;" alt="Honey Image">
+                      <div class="item-text">
+                          <h5>Olive Oil</h5>
+                          <p>50 mL.</p>
+                      </div>
+                  </li>
+      
+                  <li class="item">
+                      <img src="../../IMAGES/CRISPY CHICKEN WINGS WITH DIPPING SAUCE/tomato copy 2.jpg" class="rounded-circle" style="width: 100px;" alt="Lemon Image">
+                      <div class="item-text">
+                          <h5>Tomato</h5>
+                          <p>2 Pcs.</p>
+                      </div>
+                  </li>
+      
+
+              </ul>
+          </div>
+      
+          <div class="items_detail">
+              <div class="ff_banner">
+                  <h2>Nutrition Values</h2>
+                  <p>/ per serving</p>
+              </div>
+              <div class="foods_calories">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th><b>Nutrients</b></th>
+                      <th><b>Per Serving</b></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td>Calories</td>
+                        <td>750 kcal</td>
+                    </tr>
+                    <tr>
+                        <td>Total Fat</td>
+                        <td>40 g</td>
+                    </tr>
+                    <tr>
+                        <td>Saturated Fat</td>
+                        <td>12 g</td>
+                    </tr>
+                    <tr>
+                        <td>Cholesterol</td>
+                        <td>60 mg</td>
+                    </tr>
+                    <tr>
+                        <td>Sodium</td>
+                        <td>1500 mg</td>
+                    </tr>
+                    <tr>
+                        <td>Total Carbohydrate</td>
+                        <td>70 g</td>
+                    </tr>
+                    <tr>
+                        <td>Sugar</td>
+                        <td>8 g</td>
+                    </tr>
+                    <tr>
+                        <td>Dietary Fiber</td>
+                        <td>4 g</td>
+                    </tr>
+                    <tr>
+                        <td>Protein</td>
+                        <td>20 g</td>
+                    </tr>
+                </tbody>
+                </table>
+              </div>
+          </div>
+      </div>
+
+
+      <!-- <img class="container banner" src="../../IMAGES/Banner.png" alt="Banner"> -->
+
+      <div class="recipe mt-5 container">
+        <h2>Instructions</h2>
+
+
+        <div class="steps mt-5">
+          <div class="process">
+          <span class="icon"><i class="fa-solid fa-1"></i></span>
+          <p>• Preheat oven to 350 degrees. Pat chicken dry with paper towels and season with salt and pepper. • In a medium bowl, mix breadcrumbs with your choice of spices. In another bowl, beat eggs. Coat each chicken piece in breadcrumbs, then egg, then breadcrumbs again. • Arrange chicken on a baking sheet and bake for 20-25 minutes, or until golden brown and cooked through. Serve with your choice of dipping sauces.</p>
+        </div>
+        </div>
+
+        <div class="steps">
+          <div class="process">
+          <span class="icon"><i class="fa-solid fa-2"></i></span>
+          <p>• For dipping sauces, prepare your favorite recipes or use store-bought sauces such as BBQ, ranch, or honey mustard. Serve the sauces in small bowls alongside the chicken tenders for dipping.</p>
+        </div>
+        </div>
+        <div class="steps">
+          <div class="process">
+          <span class="icon"><i class="fa-solid fa-3"></i></span>
+          <p>• Garnish with fresh herbs or a squeeze of lemon if desired. Enjoy your crispy chicken with a variety of dipping sauces for a flavorful and satisfying meal.</p>
+        </div>
+        </div>
+        
+
+      </div>
+
+
+
+      <footer class="mt-5">
+        <h5>You also might be interested in</h5>
+        <div class="intrested_in">
+          <div>
+            <ul>
+              <li><a href="#meal-kits">Meal Kits</a></li>
+              <li><a href="#meal-kit-guide">Meal Kit Guide</a></li>
+              <li><a href="#meal-planning-guide">Meal Planning Guide</a></li>
+              <li><a href="#meal-prepping-guide">Meal Prepping Guide</a></li>
+              <li><a href="#newsroom">Newsroom</a></li>
+              <li><a href="#recipe-directory">Recipe Directory</a></li>
+              <li><a href="#top-hellofresh-recipes">Top HelloFresh Recipes</a></li>
+              <li><a href="#quick-meals">Quick Meals</a></li>
+              <li><a href="#mexican-recipes">Mexican Recipes</a></li>
+
+          </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#order-food-online">Order Food Online</a></li>
+              <li><a href="#nyc-food-delivery">NYC Food Delivery</a></li>
+              <li><a href="#san-francisco-food-delivery">San Francisco Food Delivery</a></li>
+              <li><a href="#meal-kits-for-singles">Meal Kits for Singles</a></li>
+              <li><a href="#meal-kits-for-two-or-couples">Meal Kits for Two or Couples</a></li>
+              <li><a href="#meal-kits-for-new-parents">Meal Kits for New Parents</a></li>
+              <li><a href="#kid-friendly-meal-kits">Kid Friendly Meal Kits</a></li>
+              <li><a href="#quick-easy-meal-kits">Quick & Easy Meal Kits</a></li>
+              <li><a href="#cooking-subscription-box">Cooking Subscription Box</a></li>
+          </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#ingredient-delivery-service">Ingredient Delivery Service</a></li>
+              <li><a href="#grocery-delivery-service">Grocery Delivery Service</a></li>
+              <li><a href="#meal-prep-delivery-service">Meal Prep Delivery Service</a></li>
+              <li><a href="#meal-delivery-service">Meal Delivery Service</a></li>
+              <li><a href="#vegetarian-meal-kit-delivery-service">Vegetarian Meal Kit Delivery Service</a></li>
+              <li><a href="#pescatarian-meal-delivery-service">Pescatarian Meal Delivery Service</a></li>
+              <li><a href="#flexitarian-meal-plan-delivery-service">Flexitarian Meal Plan Delivery Service</a></li>
+              <li><a href="#healthy-meal-delivery-service">Healthy Meal Delivery Service</a></li>
+              <li><a href="#low-carb-meal-delivery-service">Low Carb Meal Delivery Service</a></li>
+          </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#lunch-meal-kits">Lunch Meal Kits</a></li>
+              <li><a href="#cheap-meal-kits">Cheap Meal Kits</a></li>
+              <li><a href="#easy-recipes">Easy recipes</a></li>
+              <li><a href="#recipe-subscription-box">Recipe Subscription Box</a></li>
+              <li><a href="#meal-subscription-box">Meal Subscription Box</a></li>
+              <li><a href="#food-subscription-box">Food Subscription Box</a></li>
+              <li><a href="#home-cooked-meals">Home Cooked Meals</a></li>
+              <li><a href="#home-delivery-meals">Home Delivery Meals</a></li>
+              <li><a href="#food-delivery-box">Food Delivery Box</a></li>
+          </ul>
+          </div>
+        </div>
+        <div class="footer_refrences mt-5">
+          <div class="info"><pre>
+            © Fresh Feast 2024    <a href="#Terms and Conditions">Terms and Conditions</a>    <a href="#Privacy">Privacy</a>    <a href="#Accessibility">Accessibility</a>
+          </pre></div>
+        </div>
+      </footer>
+      
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

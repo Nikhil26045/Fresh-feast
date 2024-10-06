@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="Style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="../JS/script.js" defer></script>
+
+  
+  <title>My Project</title>
+
+
+
+</head>
+
+<body>
+
+  <!--                                                 NAVBAR                                                                   -->
+
+
+  <nav class="navbar navbar-expand-sm" id="navigation_bar">
+
+    <div class="container-fluid" id="sticky_navbar">
+
+      <img src="../IMAGES/Feast.png" alt="Avatar Logo" style="width:80px;" class="rounded-pill ms-5">
+
+      <a class="navbar-brand ms-2" href="#"></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
+
+        <ul class="navbar-nav mx-auto">
+
+
+
+          <li class="nav-item">
+            <a class="nav-link me-4" href="#" data-bs-toggle="tooltip"
+              title="Select from the largest Variet of food assortments" data-bs-placement="bottom">Our Plans</a>
+          </li>
+
+
+
+          <li class="nav-item">
+            <a class="nav-link me-4" href="#" data-bs-toggle="tooltip" title="Avail Offers"
+              data-bs-placement="bottom">Gift Cards</a>
+
+
+
+          </li>
+          <li class="nav-item dropdown me-4">
+            <a class="nav-link" href="../Main Pages/Main Page 2/index1.html" role="button">Menu</a>
+            <!-- <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Vegetarian Favorites</a></li>
+              <li><a class="dropdown-item" href="#">Meat and Seafood Dishes Savory</a></li>
+              <li><a class="dropdown-item" href="#">Protein-Rich Options</a></li>
+            </ul> -->
+          </li>
+
+
+
+          <li class="nav-item dropdown me-4">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About Us</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">About Us</a></li>
+              <li><a class="dropdown-item" href="#">Our Vision</a></li>
+              <li><a class="dropdown-item" href="#">How it Works</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <i class="fa-solid fa-cart-arrow-down me-4" style="color: black; font-size: 24px"></i>
+
+        <form class="d-flex">
+          <button class="signin_button" type="button" data-toggle="modal" data-target="#exampleModal">Sign In</button>
+        </form>
+
+        <script>
+          // Initialize tooltips
+          var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+          var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+          })
+        </script>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!--                                                 HEADING                                                                  -->
+  <div class="highlight_div col-lg-12 col-sm-12">
+    <h2 class="phrase">Tailored Taste: Every Dish Designed <span class="highlight ">Just for You.</span></h2>
+  </div>
+  <div class="d-grid gap-2 col-4 mx-auto mt-4">
+    <button type="button" class="btn btn-success btn-lg" id="get_started_button" onclick="scrollToElement()">Get Started</button>
+  </div>
+
+  <!-- <div class="banner mt-5">
+    <img src="../IMAGES/Fresh_feast_banner.png" alt="Fresh Feast Banner">
+  </div> -->
+
+
+
+  <!-- The Modal -->
+<div class="modal fade" id="exampleModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Sign In</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <form>
+          <div class="form-group mt-3">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group mt-3">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group mt-3">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+          </div>
+          <div class="form-group mt-3">
+            <label for="state">State:</label>
+            <input type="text" class="form-control" id="state" placeholder="Enter your state">
+          </div>
+          <div class="form-group mt-3">
+            <label for="address">Address:</label>
+            <textarea class="form-control" id="address" rows="3" placeholder="Enter your address"></textarea>
+          </div>
+        </form>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+  <!--                                                 PHOTOS  (CAROSEL)                                                      -->
+
+  <div id="carouselExampleSlidesOnly" class="carousel carousel-fade slide mt-5" data-bs-ride="carousel">
+    <div class="carousel-inner" id="carosel">
+      
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="../IMAGES/Food_menu1.jpg" class="d-block w-100" alt="Fresh Meals Provided">
+        <div class="carousel-inner1 d-flex flex-column justify-content-center align-items-center text-center overlay">
+          <h2 class="carousel-heading">Perfect Meal Kits for Every Palate and Diet</h2>
+          <p class="carousel-description mt-4">Select from an exclusive variety of high-quality items and distinguished restaurants.</p>
+          <button type="button" class="view-more-button btn btn-dark mt-4">View More</button>
+          <p class="tag-line mt-3">"Savor the vibrant and delicious flavors of Fresh Feast's exquisite cuisines."</p>
+        </div>
+      </div>
+      
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="../IMAGES/Food_menu2.jpg" class="d-block w-100" alt="Fresh Meals Provided">
+        <div class="carousel-inner1 d-flex flex-column justify-content-center align-items-center text-center overlay">
+          <h2 class="carousel-heading">Perfect Meal Kits for Every Palate and Diet</h2>
+          <p class="carousel-description mt-4">Select from an exclusive variety of high-quality items and distinguished restaurants.</p>
+          <button type="button" class="view-more-button btn btn-dark mt-4">View More</button>
+          <p class="tag-line mt-3">"Savor the vibrant and delicious flavors of Fresh Feast's exquisite cuisines."</p>
+        </div>
+      </div>
+      
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="../IMAGES/Food_menu3.jpg" class="d-block w-100" alt="Fresh Meals Provided">
+        <div class="carousel-inner1 d-flex flex-column justify-content-center align-items-center text-center overlay">
+          <h2 class="carousel-heading">Perfect Meal Kits for Every Palate and Diet</h2>
+          <p class="carousel-description mt-4">Select from an exclusive variety of high-quality items and distinguished restaurants.</p>
+          <button type="button" class="view-more-button btn btn-dark mt-4">View More</button>
+          <p class="tag-line mt-3">"Savor the vibrant and delicious flavors of Fresh Feast's exquisite cuisines."</p>
+        </div>
+      </div>
+      
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="../IMAGES/Food_menu4.jpg" class="d-block w-100" alt="Fresh Meals Provided">
+        <div class="carousel-inner1 d-flex flex-column justify-content-center align-items-center text-center overlay">
+          <h2 class="carousel-heading">Perfect Meal Kits for Every Palate and Diet</h2>
+          <p class="carousel-description mt-4">Select from an exclusive variety of high-quality items and distinguished restaurants.</p>
+          <button type="button" class="view-more-button btn btn-dark mt-4">View More</button>
+          <p class="tag-line mt-3">"Savor the vibrant and delicious flavors of Fresh Feast's exquisite cuisines."</p>
+        </div>
+      </div>
+      
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="../IMAGES/Food_menu5.jpg" class="d-block w-100" alt="Fresh Meals Provided">
+        <div class="carousel-inner1 d-flex flex-column justify-content-center align-items-center text-center overlay">
+          <h2 class="carousel-heading">Perfect Meal Kits for Every Palate and Diet</h2>
+          <p class="carousel-description mt-4">Select from an exclusive variety of high-quality items and distinguished restaurants.</p>
+          <button type="button" class="view-more-button btn btn-dark mt-4">View More</button>
+          <p class="tag-line mt-3">"Savor the vibrant and delicious flavors of Fresh Feast's exquisite cuisines."</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+
+  <!--                                              WHY FRESH FEAST                                                           -->
+
+  <h2 class="why_us mt-5">Why Choose Fresh Feast ?</h2>
+
+  <div class="features row justify-content-center " style="width: 90%; margin:0 auto;">
+
+
+    <div class="col-12 col-md-3 mt-5 feature">
+
+
+      <div><i class="fa-solid fa-seedling mt-4"></i></div>
+      <div>
+        <h2>Natural Goodness</h2>
+        <p>Experience the best with Fresh Feast.<br> Pure, additive-free products at unbeatable prices.</p>
+      </div>
+
+
+    </div>
+
+
+    <div class="col-12 col-md-3 mt-5 feature">
+
+
+      <div><i class="fa-solid fa-hand-holding-dollar mt-4"></i></div>
+      <div>
+        <h2>Save with Fresh Feast</h2>
+        <p>Save money with Fresh Feast. Buy now and enjoy great value!</p>
+      </div>
+
+
+    </div>
+
+
+    <div class="col-12 col-md-3 mt-5 feature">
+
+
+      <div><i class="fa-solid fa-cart-arrow-down mt-4"></i></div>
+      <div>
+        <h2>Top Picks for Resources</h2>
+        <p>Explore the finest selection with Fresh Feast. Discover premium products and save with every purchase.</p>
+      </div>
+
+
+    </div>
+
+    <div class="col-12 col-md-3 mt-5 feature">
+
+
+      <div class="stars">
+        <i class="fa-solid fa-star mt-4" style="font-size: 1.6vw;"></i>
+        <i class="fa-solid fa-star mt-4" style="font-size: 1.8vw;"></i>
+        <i class="fa-solid fa-star mt-4" style="font-size: 2vw;"></i>
+        <i class="fa-solid fa-star mt-4" style="font-size: 1.8vw;"></i>
+        <i class="fa-solid fa-star mt-4" style="font-size: 1.6vw;"></i>
+      </div>
+      <div>
+        <h2>Exceptional Feedback</h2>
+        <p>Receive top-notch insights with Fresh Feast. Your satisfaction is our priority with every recommendation.</p>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!--                                            OUR SEASONAL PLANS                                                          -->
+
+    <h2 class="plans mt-5">Handpicked Favorites: Discover the Best</h2>
+
+
+
+    <div id="carouselExample" class="thumbnail_photos carousel carousel-fade slide mt-5 justify-content-center" style="width: 90%; margin:0 auto;" data-bs-ride="carousel">
+  
+    
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <div class="row">
+            <div class="thumbnails col-4">
+              <div class="carosel_photos">
+                <img src="../IMAGES/carosel_1.jpg" class="img-thumbnail" alt="Image 1">
+              </div>
+              <div class="carosel_info mt-3">
+                <div class="carosel_heading">Creamy White Truffle Pasta</div>
+                <div class="carosel_detail">
+                  5.0&nbsp;&nbsp;
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                  (3,500) Reviews
+                </div>
+              </div>
+            </div>
+            <div class="thumbnails col-4">
+              <div class="carosel_photos">
+                <img src="../IMAGES/carosel_2.jpg" class="img-thumbnail" alt="Image 2">
+              </div>
+              <div class="carosel_info mt-3">
+                <div class="carosel_heading">Strawberry-Basil Infused Yogurt Exquisite</div>
+                <div class="carosel_detail">
+                  5.0&nbsp;&nbsp;
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                  (2,000) Reviews
+                </div>
+              </div>
+            </div>
+            <div class="thumbnails col-4">
+              <div class="carosel_photos">
+                <img src="../IMAGES/carosel_3.jpg" class="img-thumbnail" alt="Image 3">
+              </div>
+              <div class="carosel_info mt-3">
+                <div class="carosel_heading">Spinach Artichoke Toast with a Savory Dip</div>
+                <div class="carosel_detail">
+                  5.0&nbsp;&nbsp;
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                  (1,100) Reviews
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="carousel-item" data-bs-interval="5000">
+          <div class="row">
+            <div class="thumbnails col-4">
+              <div class="carosel_photos">
+                <img src="../IMAGES/carosel_4.jpg" class="img-thumbnail" alt="Image 4">
+              </div>
+              <div class="carosel_info mt-3">
+                <div class="carosel_heading">Golden Parmesan Spaghetti al Dente</div>
+                <div class="carosel_detail">
+                  5.0&nbsp;&nbsp;
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                  (2,110) Reviews
+                </div>
+              </div>
+            </div>
+            <div class="thumbnails col-4">
+              <div class="carosel_photos">
+                <img src="../IMAGES/carosel_5.jpg" class="img-thumbnail" alt="Image 5">
+              </div>
+              <div class="carosel_info mt-3">
+                <div class="carosel_heading">Eggs Benedict with Guacamole and Sesame Toast</div>
+                <div class="carosel_detail">
+                  4.5&nbsp;&nbsp;
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                  (1,800) Reviews
+                </div>
+              </div>
+            </div>
+            <div class="thumbnails col-4">
+              <div class="carosel_photos">
+                <img src="../IMAGES/carosel_6.jpg" class="img-thumbnail" alt="Image 6">
+              </div>
+              <div class="carosel_info mt-3">
+                <div class="carosel_heading">Char-Grilled Rib Eye with Red Wine Reduction</div>
+                <div class="carosel_detail">
+                  4.5&nbsp;&nbsp;
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                  (1,950) Reviews
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="carousel-item" data-bs-interval="5000">
+          <div class="row">
+            <div class="thumbnails col-4">
+              <div class="carosel_photos">
+                <img src="../IMAGES/carosel_7.jpg" class="img-thumbnail" alt="Image 7">
+              </div>
+              <div class="carosel_info mt-3">
+                <div class="carosel_heading">Creamy Alfredo White Sauce Pasta</div>
+                <div class="carosel_detail">
+                  4.5&nbsp;&nbsp;
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                  (1,900) Reviews
+                </div>
+              </div>
+            </div>
+            <div class="thumbnails col-4">
+              <div class="carosel_photos">
+                <img src="../IMAGES/carosel_8.jpg" class="img-thumbnail" alt="Image 8">
+              </div>
+              <div class="carosel_info mt-3">
+                <div class="carosel_heading">Honey Infused Maple Pancakes</div>
+                <div class="carosel_detail">
+                  4.5&nbsp;&nbsp;
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                  (1,000) Reviews
+                </div>
+              </div>
+            </div>
+            <div class="thumbnails col-4">
+              <div class="carosel_photos">
+                <img src="../IMAGES/carosel_9.jpg" class="img-thumbnail" alt="Image 9">
+              </div>
+              <div class="carosel_info mt-3">
+                <div class="carosel_heading">Watermelon Sorbet Infusion</div>
+                <div class="carosel_detail">
+                  4.5&nbsp;&nbsp;
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                  (1,100) Reviews
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+
+
+      
+    </div>
+    
+    
+
+
+ 
+<!--                                                  HOW FRESH FEAST WORKS                                                   -->
+
+
+      <div class="working " style="margin: 50px auto;">
+        <div class="working_content">
+
+          <div class="working_image"><img src="../IMAGES/how_ff_works1.jpg"></div>
+          <div class="working_info">
+            <div class="working_info_heading">
+              <h3>How Fresh Feast Works</h3>
+            </div>
+            <div class="working_information">
+              <ul>
+                <li><i class="fa-solid fa-check"></i>
+                  100% Organic Food: Only natural, chemical-free ingredients.
+                </li>
+                <li><i class="fa-solid fa-check"></i>
+                  Direct From Producers: Fresh produce delivered directly.
+                </li>
+                <li><i class="fa-solid fa-check"></i>
+                  No Middleman: Streamlined supply chain for better prices.
+                </li>
+                <li><i class="fa-solid fa-check"></i>
+                  Pesticide-Free: No harmful chemicals used.
+                </li>
+                <li><i class="fa-solid fa-check"></i>
+                  Sustainable Practices: Environmentally friendly sourcing and packaging.
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+        <div class="working_content">
+
+          <div class="working_info">
+            <div class="working_info_heading">
+              <h3>What’s inside each meal delivery box?</h3>
+            </div>
+            <div class="working_information">
+              <ul>
+                <li><i class="fa-solid fa-check"></i>
+                  Easy-to-follow recipes with clear nutritional information
+                </li>
+                <li><i class="fa-solid fa-check"></i>
+                  Premium ingredients sourced directly from the farm
+                </li>
+                <li><i class="fa-solid fa-check"></i>
+                  Convenient meal kits that fit perfectly in your fridge
+                </li>
+                <li><i class="fa-solid fa-check"></i>
+                  A delightful cooking experience that makes you feel unstoppable
+                </li>
+                <li><i class="fa-solid fa-check"></i>
+                  Eco-friendly packaging designed to minimize waste
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="working_image"><img src="../IMAGES/how_ff_works.jpg"></div>
+          
+      </div>
+
+
+  </div>
+
+
+  <footer class="foot">
+    <div class="ff_footer">
+      <div class="footer_details">
+        <div class="details"><h5>Get to Know Us</h5>
+          <br>Our Story
+          <br>Our Values
+          <br>Our Team
+          <br>Our Mission</div>
+        <div class="details"><h5>Help</h5>
+          <br>Frequently Asked Questions (FAQ)
+          <br>Ordering & Delivery Information
+          <br>Account Assistance
+          <br>Customer Support</div>
+        <div class="details"><h5>Let Us Help</h5>
+          <br>Meal Planning Advice
+          <br>Recipe Ideas
+          <br>Dietary Needs
+          <br>Personalized Recommendations</div>
+        <div class="details"><h5>Registered Office Address:</h5>
+          <br><i class="fa-solid fa-location-dot"></i>Imaginary Foods Ltd.
+          123 Fresh Street, Suite 456
+          Foodtown, FT 78910, Ohio<br>
+          <i class="fa-brands fa-facebook facebook"></i>
+          <i class="fa-brands fa-twitter twitter"></i>
+          <i class="fa-brands fa-instagram insta"></i>
+          <i class="fa-brands fa-linkedin linkedin"></i>
+
+        </div>
+      </div>
+      <div class="footer_copyright"><i class="fa-regular fa-copyright"></i>
+        <p>Fresh Feast Ltd. copyright reserved to Fresh Feast 2024</p></div>
+    </div>
+
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

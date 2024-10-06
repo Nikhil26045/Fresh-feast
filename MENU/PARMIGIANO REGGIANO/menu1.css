@@ -1,0 +1,159 @@
+#sticky_navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    background-color: rgb(252, 252, 252);
+    z-index: 1030;
+}
+
+.signin_button{
+    background: linear-gradient(45deg, #95DC1A, #469647);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Optional: for rounded corners */
+    transition: background-color 0.3s ease;
+}
+
+.phrase{
+    font-size: 2.5vw;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 7rem;
+    justify-content: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    white-space: nowrap; /* Prevent line breaks within the element */
+    overflow: hidden; /* Hide overflowed text */
+    text-overflow: ellipsis;
+}    
+
+.highlight{
+    font-weight: bold;
+    color: transparent; /* To use gradient color */
+    background: linear-gradient(45deg, #95DC1A, #469647);
+
+    /* WebKit-specific property to clip the background to the text shape */
+    -webkit-background-clip: text; 
+
+    /* Standard property to clip the background to the text shape */
+    background-clip: text;
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 0 5px; /* Add padding for spacing */
+    border-radius: 5px;
+}
+
+#get_started_button{
+    margin: 1vw 0; /* Responsive margin */
+    font-size: 1.5vw; /* Decrease font size */
+    padding: 0.5vw 0.5vw; /* Adjust padding for smaller button */
+}
+
+.modal-header {
+    position: relative;
+}
+.modal-header .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1rem;
+    margin: 0;
+    background-color: white;
+    border: none;
+    font-size: large;
+    align-items: center;
+}
+.modal-title {
+    text-align: center;
+    flex: 1;
+}
+
+.food_item{
+    margin-top: 100px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(132, 132, 132, 0.087);
+}
+
+
+.food_content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.food_heading{
+    flex: 1;
+    padding: 10px;
+}
+.food_descp{
+    display: flex;
+    flex-direction: column;
+    flex: 10;
+    padding: 10px;
+}
+
+#food_desc{
+    flex: 2;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.click_more{
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+}
+.click_more a{
+    color: green;
+    text-decoration: none;
+}
+
+.image {
+    flex: 1; /* Ensures the image container grows appropriately within the flex layout */
+    padding: 10px;
+    height: auto;
+    overflow: hidden; /* Hide any overflowed content */
+}
+
+.image img {
+    width: 100%; /* Make sure the image scales to fit the container */
+    height: auto; /* Maintain aspect ratio of the image */
+    display: block; /* Prevents any additional space below the image */
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .food_item {
+        flex-direction: column; /* Stack the items vertically */
+        align-items: center; /* Center the items horizontally */
+    }
+
+    .food_content {
+        width: 100%; /* Make sure it takes full width */
+        order: 2; /* Make sure content comes before the image in the layout */
+    }
+
+    .image {
+        width: 100%; /* Ensure image container takes full width */
+        order: 1; /* Make sure image comes after the content in the layout */
+    }
+}

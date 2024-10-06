@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <section>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  
+    <title>My Project</title>
+    <script src="script1.js" defer></script>
+</head>
+<body>
+    
+  <!--                                                 NAVBAR                                                                   -->
+
+
+  <nav class="navbar navbar-expand-sm" id="navigation_bar">
+
+    <div class="container-fluid" id="sticky_navbar">
+
+      <img src="../../IMAGES/Feast.png" alt="Avatar Logo" style="width:80px;" class="rounded-pill ms-5">
+
+      <a class="navbar-brand ms-2" href="#"></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
+
+        <ul class="navbar-nav mx-auto">
+
+
+
+          <li class="nav-item">
+            <a class="nav-link me-4" href="#" data-bs-toggle="tooltip"
+              title="Select from the largest Variet of food assortments" data-bs-placement="bottom">Our Plans</a>
+          </li>
+
+
+
+          <li class="nav-item">
+            <a class="nav-link me-4" href="#" data-bs-toggle="tooltip" title="Avail Offers"
+              data-bs-placement="bottom">Gift Cards</a>
+
+
+
+          </li>
+          <li class="nav-item dropdown me-4">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Menu</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Vegan Delights</a></li>
+              <li><a class="dropdown-item" href="#">Vegetarian Favorites</a></li>
+              <li><a class="dropdown-item" href="#">Meat and Seafood Dishes Savory</a></li>
+              <li><a class="dropdown-item" href="#">Protein-Rich Options</a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="nav-item dropdown me-4">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About Us</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">About Us</a></li>
+              <li><a class="dropdown-item" href="#">Our Vision</a></li>
+              <li><a class="dropdown-item" href="#">How it Works</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <i class="fa-solid fa-cart-arrow-down me-4" style="color: black; font-size: 24px"></i>
+
+        <form class="d-flex">
+          <button class="signin_button" type="button" data-toggle="modal" data-target="#exampleModal">Sign In</button>
+        </form>
+
+        <script>
+          // Initialize tooltips
+          var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+          var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+          })
+        </script>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+    <!-- The Modal -->
+<div class="modal fade" id="exampleModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Sign In</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <form>
+          <div class="form-group mt-3">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group mt-3">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group mt-3">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+          </div>
+          <div class="form-group mt-3">
+            <label for="state">State:</label>
+            <input type="text" class="form-control" id="state" placeholder="Enter your state">
+          </div>
+          <div class="form-group mt-3">
+            <label for="address">Address:</label>
+            <textarea class="form-control" id="address" rows="3" placeholder="Enter your address"></textarea>
+          </div>
+        </form>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+    <!--                                                CONTENT                                                               -->
+
+
+
+  <div class="container">
+
+
+    
+    <div class="card">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="../../IMAGES/menu1.jpg" alt="Trust & Co.">
+          </div>
+          <div class="icon">
+            <a href="../../MENU/PAN SEARED CHICKEN/menu1.html" class="iconBox nveg"> <span class="material-symbols-outlined">
+                arrow_outward
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Pan-Seared Chicken Tenders</h3>
+        <p>Elegantly seasoned and perfectly crisped for a refined taste experience.</p>
+        <ul class="menu_info">
+          <li  class="branding">35 Min.</li>
+          <!-- <li  class="packaging">Non-Veg</li> -->
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="../../IMAGES/menu2.jpg" alt="Tonic">
+          </div>
+          <div class="icon">
+            <a href="../../MENU/MEDITERRANEAN GRENNS PLATE/menu1.html" class="iconBox veg"> <span class="material-symbols-outlined">
+                arrow_outward
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Mediterranean Greens Plate</h3>
+        <p>A sophisticated array of seasonal greens and artisanal ingredients, elegantly presented.</p>
+        <ul class="menu_info">
+          <li class="branding">10 Min.</li>
+          <!-- <li class="packaging">packaging</li> -->
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="../../IMAGES/menu3.jpg" alt="Shower Gel">
+          </div>
+          <div class="icon">
+            <a href="../../MENU/RASPBERRY CHOCOLATE LAYER CAKE/menu1.html" class="iconBox egg"> <span class="material-symbols-outlined">
+                arrow_outward
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Raspberry Chocolate Layer Cake</h3>
+        <p>Elegant chocolate cake layered with raspberry, offering a refined indulgence.</p>
+        <ul class="menu_info">
+          <li class="branding">45 Min.</li>
+          <!-- <li class="packaging">packaging</li> -->
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <div class="container">
+
+
+    <div class="card">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="../../IMAGES/menu4.jpg" alt="Trust & Co.">
+          </div>
+          <div class="icon">
+            <a href="../../MENU/CLASSIC AVOCADO EGG TOAST/menu1.html" class="iconBox egg"> <span class="material-symbols-outlined">
+                arrow_outward
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Classic Avocado Egg Toast</h3>
+        <p>Toasted bread topped with creamy avocado and a perfectly cooked egg.</p>
+        <ul class="menu_info">
+          <li class="branding">"20 Min."</li>
+          <!-- <li style="--clr-tag:#70b3b1;" class="packaging">packaging</li> -->
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="../../IMAGES/menu5.jpg" alt="Tonic">
+          </div>
+          <div class="icon">
+            <a href="../../MENU/AVOCADO & EGG POKE BOWL/menu1.html" class="iconBox egg"> <span class="material-symbols-outlined">
+                arrow_outward
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Avocado & Egg Poké Bowl</h3>
+        <p>Fresh poké bowl with avocado, egg, and seasoned rice.</p>
+        <ul class="menu_info">
+          <li class="branding">30 Min.</li>
+          <!-- <li style="--clr-tag:#70b3b1;" class="packaging">packaging</li> -->
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="../../IMAGES/menu6.jpg" alt="Shower Gel">
+          </div>
+          <div class="icon">
+            <a href="../../MENU/KOREAN BBQ CHICKEN/menu1.html" class="iconBox nveg"> <span class="material-symbols-outlined">
+                arrow_outward
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Korean BBQ Chicken</h3>
+        <p>Tender chicken in a savory Korean-style sauce, richly flavored.</p>
+        <ul class="menu_info">
+          <li class="branding">40 Min.</li>
+          <!-- <li style="--clr-tag:#70b3b1;" class="packaging">packaging</li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="../../IMAGES/menu7.jpg" alt="Trust & Co.">
+          </div>
+          <div class="icon">
+            <a href="../../MENU/GARDEN MIX SALAD/menu1.html" class="iconBox veg"> <span class="material-symbols-outlined">
+                arrow_outward
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Garden Mix Salad</h3>
+        <p>Colorful medley of crisp vegetables, creating a vibrant, nutritious salad.</p>
+        <ul class="menu_info">
+          <li class="branding">15 Min.</li>
+          <!-- <li style="--clr-tag:#70b3b1;" class="packaging">packaging</li> -->
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="../../IMAGES/menu8.jpg" alt="Tonic">
+          </div>
+          <div class="icon">
+            <a href="../../MENU/SIGNATURE FRIED RICE WITH EGG/menu1.html" class="iconBox egg"> <span class="material-symbols-outlined">
+                arrow_outward
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Signature Fried Rice with Egg</h3>
+        <p>Classic fried rice stir-fried with egg and a touch of seasoning.</p>
+        <ul class="menu_info">
+          <li class="branding">20 Min.</li>
+          <!-- <li style="--clr-tag:#70b3b1;" class="packaging">packaging</li> -->
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="../../IMAGES/menu9.jpg" alt="Shower Gel">
+          </div>
+          <div class="icon">
+            <a href="../../MENU/PARMIGIANO REGGIANO/menu1.html" class="iconBox veg"> <span class="material-symbols-outlined">
+                arrow_outward
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Parmigiano Reggiano</h3>
+        <p>Al dente pasta finished with a generous sprinkling of Parmesan cheese.</p>
+        <ul class="menu_info">
+          <li class="branding">25 Min.</li>
+          <!-- <li style="--clr-tag:#70b3b1;" class="packaging">packaging</li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="card">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="../../IMAGES/menu10.jpg" alt="Trust & Co.">
+          </div>
+          <div class="icon">
+            <a href="../../MENU/CRISPY CHICKEN LETTUCE SALAD/menu1.html" class="iconBox nveg"> <span class="material-symbols-outlined">
+                arrow_outward
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Crispy Chicken Lettuce Salad</h3>
+        <p>Fresh lettuce topped with crispy chicken and a flavorful dressing.</p>
+        <ul class="menu_info">
+          <li class="branding">30 Min.</li>
+          <!-- <li style="--clr-tag:#70b3b1;" class="packaging">packaging</li> -->
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="../../IMAGES/menu11.jpg" alt="Tonic">
+          </div>
+          <div class="icon">
+            <a href="../../MENU/BANANA & CHOCOLATE CREPE SUNDAE/menu1.html" class="iconBox veg"> <span class="material-symbols-outlined">
+                arrow_outward
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Banana & Chocolate Crepe Sundae</h3>
+        <p>Delicate crepes filled with bananas, drizzled with chocolate, and served with ice cream.</p>
+        <ul class="menu_info">
+          <li class="branding">20 Min.</li>
+          <!-- <li style="--clr-tag:#70b3b1;" class="packaging">packaging</li> -->
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="../../IMAGES/menu12.jpg" alt="Shower Gel">
+          </div>
+          <div class="icon">
+            <a href="../../MENU/CRISPY CHICKEN WINGS WITH DIPPING SAUCE/menu1.html" class="iconBox nveg"> <span class="material-symbols-outlined">
+                arrow_outward
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Crispy Chicken Wings with Dipping Sauce</h3>
+        <p>Crispy chicken wings paired with a choice of savory dressing.</p>
+        <ul class="menu_info">
+          <li  class="branding">30 Min.</li>
+          <!-- <li style="--clr-tag:#70b3b1;" class="packaging">packaging</li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="container">
+    <div class="card">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="../../IMAGES/menu13.jpg" alt="Trust & Co.">
+          </div>
+          <div class="icon">
+            <a href="../../MENU/CLASSIC STEAK WITH MASHED POTATOES/menu1.html" class="iconBox nveg"> <span class="material-symbols-outlined">
+                arrow_outward
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Classic Steak with Mashed Potatoes</h3>
+        <p>Juicy steak served with creamy mashed potatoes and tender asparagus.</p>
+        <ul class="menu_info">
+          <li class="branding">45 Min.</li>
+          <!-- <li style="--clr-tag:#70b3b1;" class="packaging">packaging</li> -->
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="../../IMAGES/menu14.jpg" alt="Tonic">
+          </div>
+          <div class="icon">
+            <a href="../../MENU/CLASSIC STRAWBERRY CHEESECAKE/menu1.html" class="iconBox veg"> <span class="material-symbols-outlined">
+                arrow_outward
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Classic Strawberry Cheesecake</h3>
+        <p>Rich, creamy cheesecake topped with fresh strawberries for a classic finish.</p>
+        <ul class="menu_info">
+          <li class="branding">1 Hr.</li>
+          <!-- <li style="--clr-tag:#70b3b1;" class="packaging">packaging</li> -->
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="../../IMAGES/menu15.jpg" alt="Shower Gel">
+          </div>
+          <div class="icon">
+            <a href="../../MENU/TRADITIONAL SOY SAUCE FRIED RICE/menu1.html" class="iconBox veg"> <span class="material-symbols-outlined">
+                arrow_outward
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Traditional Soy Sauce Fried Rice</h3>
+        <p>Savor the richness of fried rice, perfectly enhanced with soy sauce.</p>
+
+        <ul class="menu_info">
+          <li class="branding">15 Min.</li>
+          <!-- <li style="--clr-tag:#70b3b1;" class="packaging">packaging</li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
